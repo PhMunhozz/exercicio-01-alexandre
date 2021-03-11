@@ -9,16 +9,38 @@
     <title>Paulo Munhoz</title>
 
 </head>
-
+<!-- Teste -->
 <body>
     <main>
 
         <header>
-            <h1>Cabeçalho da Página</h1>
+            <div class="redes-sociais flex">
+                <div>
+                    <img src="images/telefone.png" id="telefone">
+                </div>
+                <div id="social-right">
+                    <img src="images/facebook.png">
+                    <img src="images/instagram.png">
+                    <img src="images/twitter.png">
+                    <img src="images/whatsapp.png">
+                    <img src="images/network-2.png">
+                </div>
+            </div>
+            <div class="flex cabecalho">
+                <h1>Cabeçalho da Página</h1>
+                <nav>
+                    <ul class="lista-menu">
+                        <li>Home</li>
+                        <li>Informações</li>
+                        <li>Contatos</li>
+                        <li>Localização</li>
+                    </ul>
+                </nav>
+            </div>
         </header>
 
-        <article>
-            <section class="coluna1">
+        <article class="flex">
+            <section class="coluna coluna1">
                 <h2>Primeira Coluna</h2>
                 <ul>
                     <li>Menu 1</li>
@@ -29,7 +51,7 @@
                 </ul>
             </section>
 
-            <section class="coluna2">
+            <section class="coluna coluna2">
                 <h2>Segunda Coluna</h2>
                 <table>
                     <tr>
@@ -105,17 +127,19 @@
                 </table>
             </section>
 
-            <section class="coluna3">
+            <section class="coluna coluna3">
                 <h2>Terceira Coluna</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quaerat earum aperiam dolor ipsa
                     consequuntur reprehenderit rerum nisi obcaecati minima laudantium, labore nesciunt nostrum, atque
                     exercitationem, facilis ad enim quibusdam!</p>
-                <img src="foto.jpg" alt="Paisagem">
+                <img src="images/foto.jpg" alt="Paisagem">
             </section>
         </article>
 
         <footer>
-            <p>Copyright Paulo Munhoz - 7º Período CPU</p>
+            <p class="txt-left">Entre em contato:<br>paulo.munhoz@aluno.unincor.edu.br</p>
+            <hr align="center" width="30%" color="#ccc">
+            <p class="txt-center">&copy;Copyright Paulo Munhoz - 7º Período CPU</p>
         </footer>
     </main>
 

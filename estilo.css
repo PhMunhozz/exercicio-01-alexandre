@@ -1,7 +1,58 @@
-header {
-    height: 72px;
-    border: 1px solid #ccc;
+body {
+    margin: 0; padding: 0;
 }
+main {
+    font-family:Arial, Helvetica, sans-serif
+}
+.largura{
+    /* width: 85%; */
+    padding: 0 10%;
+    margin: 0 auto;
+}
+.txt-left {
+    padding: 0 5%;
+}
+.txt-center {
+    text-align: center;
+}
+div.redes-sociais{
+    background-color: #ccc;
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+.redes-sociais img {
+    float: left;
+    width: 20px;
+    height: 20px;
+    padding: 5px 0 5px 5px;
+}
+#social-right :nth-last-child(){
+    padding-right: 5px;
+}
+.cabecalho {
+    align-items: center;
+}
+#telefone {
+    float: left;
+}
+header {
+    
+    background-color: #000;
+    font-family: Garamond;
+    color: #fff;
+    overflow: auto;
+}
+
+header nav .lista-menu {
+    list-style: none;;
+}
+.lista-menu li{
+    display: inline-flex;
+}
+
 table, td, th {
     border: 1px solid black;
   }
@@ -13,41 +64,34 @@ table {
   }
 
 img {
-      width: 90%;
       display: block;
       margin: 0 auto;
   }
   
-.coluna1 {
-    width: 32%;
+.coluna {
     height: 500px;
-    float: left;
-    margin-right: 2%;
-    margin-top: 5px;
     margin-bottom: 5px;
+    flex: 1;
+}
+
+.coluna1 { 
+    margin-right: 4%;
     background-color: antiquewhite;
 }
 
 .coluna2 {
-    width: 32%;
-    height: 500px;
-    float: left;
-    margin-top: 5px;
-    margin-bottom: 5px;
+    margin-right: 4%;
     background-color: aquamarine;
 }
 
 .coluna3 {
-    width: 32%;
-    height: 500px;
-    float: right;
-    margin-top: 5px;
-    margin-bottom: 5px;
     background-color: chartreuse;
 }
 
 footer {
-    border: 1px solid #ccc;
-    text-align: center;
+    font-size: small;
+    color: white;
+    overflow: auto;
+    background-color: #000;
     clear: both;
 }
