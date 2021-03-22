@@ -65,48 +65,57 @@ header nav .lista-menu {
 }
 
 
-/*Estilo padrão das colunas e cor de fundo para destacar cada coluna*/  
+/*Estilo padrão das colunas*/  
 .coluna {
     padding: 10px 5px 30px 5px;
-    flex: 1;
-}
-.coluna1 { 
-    background-color: antiquewhite;
+    flex: 1;    
 }
 
-.coluna2 {
-    background-color: #FFFAFA;
-}
-
-.coluna3 {
-    background-color: #E0FFFF;
-}
 
 /*Estilo padrão para os h2*/
 h2 {
     text-align: center;
 }
 
-/*Estilos para o menu da primeira coluna*/
-.lista-col {
-    margin: 0; padding: 0;
+/*Estilo do formulário da primeira coluna*/
+.form-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
-.lista-col li {
-    list-style: none;
-    display: block;
-    background-color: #363636;
-    margin-bottom: 1px;
-    color: #fff;
-    padding: 10px 3px;
-    border-radius: 3px
+input[type="text"], input[type="email"], input[type="password"]{
+    width: 50%;
+    height: 20px;
 }
-.lista-col li:hover {
-    background-color: #32CD32;
+input {
+    margin-bottom: 10px;
+}
+input[type="submit"]{
+    padding: 5px 20px;
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 3px;
+    font-size: 15px;
+    transition: ease 1s;
+
+}
+input[type="submit"]:hover{
     cursor: pointer;
+    background-color: #f0f0f0;
+    color: black;
+    transition: ease 1s;
+    border: 1px solid black;
+
 }
 
 /*Estilos da tabela da segunda coluna*/
+#tabela{
+    margin:0; padding: 0;
+}
 table {
+    font-size: 1rem;
     border-collapse: collapse;
     width: 100%;
 }
@@ -128,13 +137,6 @@ tr:hover {
     background-color: #A9A9A9;
 }
 
-/*Estilo da imagem da terceira coluna*/
-img {
-    width: 100%;
-    display: block;
-    margin-right: auto;
-    margin-left: auto;
-}
 
 /*Estilo do rodapé da página*/
 footer {

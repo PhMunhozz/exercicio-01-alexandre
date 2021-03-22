@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="estilo.css">
+    <script type="text/javascript" src="script.js"></script>
+
     <title>Paulo Munhoz</title>
 
 </head>
@@ -47,98 +49,37 @@
         <!--Conteúdo da página-->
         <article class="flex">
             <!--Coluna com menu-->
-            <section class="coluna coluna1">
-                <h2>Primeira Coluna</h2>
-                <ul class="lista-col">
-                    <li>Menu 1</li>
-                    <li>Menu 2</li>
-                    <li>Menu 3</li>
-                    <li>Menu 4</li>
-                    <li>Menu 5</li>
-                </ul>
+            <section class="coluna">
+                <form id="form" action="" onsubmit="return enviar_formulario()">
+                    <h2>Cadastre-se</h2>
+                    <div class="form-flex">
+                        <input type="text" name="login" id="login" placeholder="Digite seu login...">
+                        <input type="email" name="email" id="email" placeholder="Digite seu email...">
+                        <input type="password" name="senha" id="senha" placeholder="Digite sua senha...">
+                        <input type="password" name="confirma-senha" id="confirma-senha"
+                            placeholder="Confirme sua senha..." oninput="validaSenha(this)">
+                        <input type="submit" value="Cadastrar">
+                    </div>
+                </form>
+
             </section>
 
             <!--Coluna com tabela-->
-            <section class="coluna coluna2">
+            <section class="coluna">
                 <h2>Segunda Coluna</h2>
                 <table>
-                    <tr>
-                        <th>Nome</th>
-                        <th>Email</th>
-                        <th>Telefone</th>
-                    </tr>
-                    <tr>
-                        <td>Paulo</td>
-                        <td>asdasd@hotmail.com</td>
-                        <td>124123123</td>
-                    </tr>
-                    <tr>
-                        <td>Pedro</td>
-                        <td>aidasiu@gmail.com</td>
-                        <td>4214343</td>
-                    </tr>
-                    <tr>
-                        <td>João</td>
-                        <td>bhnfgh@gmail.com</td>
-                        <td>435435</td>
-                    </tr>
-                    <tr>
-                        <td>Michel</td>
-                        <td>ghbfg@gmail.com</td>
-                        <td>6787464</td>
-                    </tr>
-                    <tr>
-                        <td>Claudio</td>
-                        <td>lkhd@gmail.com</td>
-                        <td>345365654</td>
-                    </tr>
-                    <tr>
-                        <td>Zé</td>
-                        <td>ghjvbn@gmail.com</td>
-                        <td>6784676</td>
-                    </tr>
-                    <tr>
-                        <td>Cleuza</td>
-                        <td>dvxcvcx@gmail.com</td>
-                        <td>653546456</td>
-                    </tr>
-                    <tr>
-                        <td>Maria</td>
-                        <td>mjkhj@gmail.com</td>
-                        <td>768567</td>
-                    </tr>
-                    <tr>
-                        <td>Josiane</td>
-                        <td>xcjkna@gmail.com</td>
-                        <td>97896897</td>
-                    </tr>
-                    <tr>
-                        <td>Xico</td>
-                        <td>çghj@gmail.com</td>
-                        <td>965746</td>
-                    </tr>
-                    <tr>
-                        <td>Maria</td>
-                        <td>mjkhj@gmail.com</td>
-                        <td>768567</td>
-                    </tr>
-                    <tr>
-                        <td>Josiane</td>
-                        <td>xcjkna@gmail.com</td>
-                        <td>97896897</td>
-                    </tr>
-                    <tr>
-                        <td>Xico</td>
-                        <td>çghj@gmail.com</td>
-                        <td>965746</td>
-                    </tr>
-                </table>
-            </section>
+                    <thead>
+                        <tr>
+                            <th>Login</th>
+                            <th>Email</th>
+                            <th>Senha</th>
+                            <th>Confirmação de senha</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabela">
 
-            <!--Coluna com imagem-->
-            <section class="coluna coluna3">
-                <h2>Terceira Coluna</h2>
-                <img src="images/cr7.jpg" alt="Cristiano Ronaldo">
+                    </tbody>
+                </table>
             </section>
 
         </article>
